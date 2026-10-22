@@ -1,54 +1,60 @@
-document.addEventListener("DOMContentLoaded", () => {
+(() => {
   const year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
 
-  const toggle = document.querySelector(".menu-toggle");
+  const menuButton = document.querySelector(".menu-toggle");
   const nav = document.querySelector(".nav");
-  if (toggle && nav) {
-    toggle.addEventListener("click", () => {
-      const isOpen = nav.classList.toggle("open");
-      toggle.setAttribute("aria-expanded", String(isOpen));
+  if (menuButton && nav) {
+    menuButton.addEventListener("click", () => {
+      const open = nav.classList.toggle("open");
+      menuButton.setAttribute("aria-expanded", String(open));
     });
   }
 
   const search = document.getElementById("offer-search");
-  const filter = document.getElementById("category-filter");
+  const category = document.getElementById("category-filter");
+  const device = document.getElementById("device-filter");
   const list = document.getElementById("offer-list");
-  if (search && filter && list) {
-    const cards = Array.from(list.querySelectorAll(".directory-card"));
-    const count = document.getElementById("results-count");
-    const empty = document.getElementById("empty-state");
+  const count = document.getElementById("results-count");
+  const empty = document.getElementById("empty-state");
 
-    function updateResults() {
+  if (search && category && device && list) {
+    const cards = [...list.querySelectorAll(".offer-card")];
+    function update() {
       const term = search.value.trim().toLowerCase();
-      const category = filter.value;
-      let shown = 0;
+      let visibleCount = 0;
       cards.forEach(card => {
-        const matchesText = (card.dataset.search + " " + card.textContent).toLowerCase().includes(term);
-        const matchesCategory = category === "all" || card.dataset.category === category;
-        const visible = matchesText && matchesCategory;
-        card.hidden = !visible;
-        if (visible) shown++;
+        const devices = (card.dataset.devices || "").split(/\s+/).filter(Boolean);
+        const textMatch = `${card.dataset.search || ""} ${card.textContent}`.toLowerCase().includes(term);
+        const categoryMatch = category.value === "all" || card.dataset.category === category.value;
+        const deviceMatch = device.value === "all" || devices.includes(device.value) ||
+          (device.value === "ios" && devices.includes("iphone"));
+        const show = textMatch && categoryMatch && deviceMatch;
+        card.classList.toggle("hidden", !show);
+        if (show) visibleCount++;
       });
-      count.textContent = `${shown} resource${shown === 1 ? "" : "s"}`;
-      empty.hidden = shown !== 0;
+      if (count) count.textContent = `${visibleCount} ${visibleCount === 1 ? "listing" : "listings"}`;
+      if (empty) empty.hidden = visibleCount !== 0;
     }
+    search.addEventListener("input", update);
+    category.addEventListener("change", update);
+    device.addEventListener("change", update);
 
-    search.addEventListener("input", updateResults);
-    filter.addEventListener("change", updateResults);
-    const params = new URLSearchParams(window.location.search);
-    const categoryParam = params.get("category");
-    if (categoryParam && Array.from(filter.options).some(option => option.value === categoryParam)) {
-      filter.value = categoryParam;
-    }
-    updateResults();
+    const params = new URLSearchParams(location.search);
+    const initialCategory = params.get("category");
+    if (initialCategory && [...category.options].some(o => o.value === initialCategory)) category.value = initialCategory;
+    update();
   }
 
-  // Placeholder offer buttons deliberately do not redirect anywhere.
-  document.querySelectorAll('[data-placeholder="true"]').forEach(link => {
-    link.addEventListener("click", event => {
-      event.preventDefault();
-      alert("This is a demo placeholder. Edit cpa.html and replace this button's href with your real, approved offer URL before publishing.");
-    });
+  const draft = document.getElementById("email-draft");
+  if (draft) draft.addEventListener("click", () => {
+    const name = document.getElementById("name")?.value.trim() || "";
+    const email = document.getElementById("email")?.value.trim() || "";
+    const topic = document.getElementById("topic")?.value || "Enquiry";
+    const message = document.getElementById("message")?.value.trim() || "";
+    const subject = encodeURIComponent(`[Shemu Hub] ${topic}`);
+    const body = encodeURIComponent(`Name: ${name}\nReply email: ${email}\nTopic: ${topic}\n\nDetails:\n${message}`);
+    // Replace the placeholder with a real, monitored contact email before launch.
+    window.location.href = `mailto:REPLACE-WITH-YOUR-REAL-EMAIL@example.com?subject=${subject}&body=${body}`;
   });
-});
+})();

@@ -1,60 +1,71 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Browse CPA campaigns, survey opportunities, VPS hosting and digital marketing resources.">
-  <meta name="theme-color" content="#071426">
-  <title>CPA Offers & Resources — Shemu Hub</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<header class="site-header">
-  <a class="brand" href="index.html"><span class="brand-mark">S</span><span>Shemu<span class="accent">Hub</span></span></a>
-  <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-  <nav class="nav" id="main-nav"><a href="index.html">Home</a><a class="active" href="cpa.html">CPA Offers</a><a href="index.html#categories">Categories</a><a href="index.html#about">About</a></nav>
-  <a class="nav-cta" href="#offers">Browse offers <span>↗</span></a>
-</header>
-<main>
-  <section class="page-hero container"><div class="eyebrow">The Shemu Hub directory</div><h1>Explore <span class="gradient-text">offers & resources.</span></h1><p>Search by topic, compare the details and open the provider’s official offer page.</p></section>
-  <section class="container directory-layout" id="offers">
-    <aside class="filter-panel">
-      <label for="offer-search">Search offers</label>
-      <input id="offer-search" type="search" placeholder="e.g. survey, VPS, SEO">
-      <label for="category-filter">Category</label>
-      <select id="category-filter">
-        <option value="all">All categories</option><option value="surveys">Surveys & Rewards</option><option value="vps">VPS & Hosting</option><option value="cpa">CPA Offers</option><option value="marketing">Digital Marketing</option><option value="software">Apps & Software</option><option value="learning">Learning & Skills</option>
-      </select>
-      <div class="filter-tip"><strong>Before you promote</strong><p>Confirm geo targeting, traffic-source rules, payout conditions and allowed promotional methods with each network.</p></div>
-    </aside>
-    <div class="directory-content">
-      <div class="directory-toolbar"><span id="results-count">6 resources</span><span class="small-note">Example entries — replace before publishing</span></div>
-      <div class="offer-list" id="offer-list">
-        <article class="directory-card" data-category="surveys" data-search="survey rewards research panels">
-          <div class="offer-icon teal">▤</div><div class="directory-card-body"><div class="tag">SURVEYS & REWARDS</div><h2>Survey opportunities</h2><p>Add a real survey partner here. Explain supported countries, age requirements and how participation works.</p><div class="meta-line">Eligibility: check provider terms</div></div><a class="button button-primary offer-button" href="#" data-placeholder="true">Add your link ↗</a>
-        </article>
-        <article class="directory-card" data-category="vps" data-search="VPS cloud server hosting virtual private server">
-          <div class="offer-icon blue">⌘</div><div class="directory-card-body"><div class="tag">VPS & HOSTING</div><h2>VPS hosting resources</h2><p>Add a hosting affiliate or CPA offer with pricing, location availability and renewal terms.</p><div class="meta-line">Pricing: verify with provider</div></div><a class="button button-primary offer-button" href="#" data-placeholder="true">Add your link ↗</a>
-        </article>
-        <article class="directory-card" data-category="cpa" data-search="CPA campaign cost per action lead generation">
-          <div class="offer-icon purple">✦</div><div class="directory-card-body"><div class="tag">CPA CAMPAIGN</div><h2>CPA campaign</h2><p>Describe the actual user action required, eligible regions and any restrictions in plain language.</p><div class="meta-line">Reward: do not promise unverified payouts</div></div><a class="button button-primary offer-button" href="#" data-placeholder="true">Add your link ↗</a>
-        </article>
-        <article class="directory-card" data-category="marketing" data-search="digital marketing SEO email analytics">
-          <div class="offer-icon orange">↗</div><div class="directory-card-body"><div class="tag">DIGITAL MARKETING</div><h2>Marketing tools</h2><p>Add an authorized partner link for SEO, email, analytics or content tools.</p><div class="meta-line">Plan details: check provider page</div></div><a class="button button-primary offer-button" href="#" data-placeholder="true">Add your link ↗</a>
-        </article>
-        <article class="directory-card" data-category="software" data-search="apps software productivity online tools">
-          <div class="offer-icon pink">▣</div><div class="directory-card-body"><div class="tag">APPS & SOFTWARE</div><h2>Useful apps and software</h2><p>Explain what the tool does and whether a free trial or paid plan is involved.</p><div class="meta-line">Terms: check trial and billing rules</div></div><a class="button button-primary offer-button" href="#" data-placeholder="true">Add your link ↗</a>
-        </article>
-        <article class="directory-card" data-category="learning" data-search="learning skills online courses education">
-          <div class="offer-icon yellow">✎</div><div class="directory-card-body"><div class="tag">LEARNING & SKILLS</div><h2>Courses and learning resources</h2><p>Add courses or education products you are permitted to promote.</p><div class="meta-line">Access: check course availability</div></div><a class="button button-primary offer-button" href="#" data-placeholder="true">Add your link ↗</a>
-        </article>
-      </div>
-      <div class="empty-state" id="empty-state" hidden>No resources match your search. Try another keyword or category.</div>
-      <div class="ad-placeholder"><span class="ad-label">ADVERTISEMENT</span><p>Ad placement reserved. Insert an ad-network code here only after your site is approved.</p></div>
-    </div>
-  </section>
-</main>
-<footer class="site-footer"><div class="container footer-main"><a class="brand" href="index.html"><span class="brand-mark">S</span><span>Shemu<span class="accent">Hub</span></span></a><p>A directory of online offers, tools and resources.</p><div class="footer-links"><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="disclosure.html">Affiliate disclosure</a><a href="contact.html">Contact</a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> Shemu Hub</span><span>Some links may be affiliate links. See our disclosure.</span></div></footer>
-<script src="script.js"></script>
-</body>
-</html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Browse selected CPA and partner offers by category and device compatibility. Check eligibility and provider terms before participating."><meta name="theme-color" content="#0b1020"><title>CPA Offers Directory — Shemu Hub</title><link rel="stylesheet" href="styles.css"></head><body>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">S</span><span>Shemu<span class="brand-light">Hub</span><small>Digital discovery, made simpler</small></span></a><button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav class="nav"><a href="index.html">Home</a><a class="active" href="cpa.html">CPA Offers</a><a href="index.html#categories">Categories</a><a href="services.html">Services</a><a href="about.html">About</a><a class="nav-cta" href="contact.html">Contact us ↗</a></nav></header>
+<main><section class="directory-hero"><div class="wrap"><div class="eyebrow"><span class="pulse"></span> PARTNER OFFER DIRECTORY</div><h1>Explore offers that<br><span class="gradient-text">fit your setup.</span></h1><p>Browse partner offers by device or category. Review the provider’s details and terms before continuing.</p><div class="directory-stats"><span><b>01</b> Choose device</span><span><b>02</b> Filter category</span><span><b>03</b> Review eligibility</span></div></div></section>
+<section class="wrap directory-section"><div class="directory-toolbar"><div class="searchbox"><span>⌕</span><input id="offer-search" type="search" placeholder="Search offers, tools or categories…" aria-label="Search offers"></div><div class="filter-group"><label for="device-filter">Device</label><select id="device-filter"><option value="all">All devices</option><option value="desktop">Desktop / Laptop</option><option value="android">Android</option><option value="iphone">iPhone</option><option value="ios">All iOS devices</option></select></div><div class="filter-group"><label for="category-filter">Category</label><select id="category-filter"><option value="all">All categories</option><option value="surveys">Surveys</option><option value="vps">VPS & Hosting</option><option value="cpa">CPA offers</option><option value="marketing">Digital Marketing</option><option value="software">Software & SaaS</option><option value="learning">Learning</option></select></div></div><div class="results-row"><span id="results-count">8 listings</span><span>Review the terms before continuing ↗</span></div><div class="offer-grid" id="offer-list">
+<article class="offer-card" data-category="cpa" data-devices="desktop android iphone ios" data-search="partner offer 01 CPA smartlink desktop android iphone ios">
+<div class="offer-top"><span class="offer-icon violet">↗</span><span class="pill">CPA OFFER</span></div>
+<h2>Partner Offer 01</h2>
+<p>Open this partner offer to view the available details and check any requirements shown by the provider.</p>
+<div class="offer-meta"><span>▣ Desktop & mobile</span><span>◷ Provider terms apply</span></div>
+<div class="device-tags"><span>Desktop</span><span>Android</span><span>iPhone</span><span>iOS</span></div>
+<div class="offer-action"><span class="offer-note">Partner link</span><a class="btn btn-small" href="https://www.profitableratecpmnetwork.com/dg0mjkpb?key=f9769ba660b49617517a8c95ca1f8b18" target="_blank" rel="nofollow sponsored noopener">View Offer ↗</a></div>
+</article>
+<article class="offer-card" data-category="cpa" data-devices="desktop android iphone ios" data-search="partner offer 02 CPA smartlink desktop android iphone ios">
+<div class="offer-top"><span class="offer-icon violet">↗</span><span class="pill">CPA OFFER</span></div>
+<h2>Partner Offer 02</h2>
+<p>Open this partner offer to view the available details and check any requirements shown by the provider.</p>
+<div class="offer-meta"><span>▣ Desktop & mobile</span><span>◷ Provider terms apply</span></div>
+<div class="device-tags"><span>Desktop</span><span>Android</span><span>iPhone</span><span>iOS</span></div>
+<div class="offer-action"><span class="offer-note">Partner link</span><a class="btn btn-small" href="https://www.profitableratecpmnetwork.com/i0bc7gjq5?key=db254b957fba53c8d7be60394c27cb3b" target="_blank" rel="nofollow sponsored noopener">View Offer ↗</a></div>
+</article>
+<article class="offer-card" data-category="cpa" data-devices="desktop android iphone ios" data-search="partner offer 03 CPA smartlink desktop android iphone ios">
+<div class="offer-top"><span class="offer-icon violet">↗</span><span class="pill">CPA OFFER</span></div>
+<h2>Partner Offer 03</h2>
+<p>Open this partner offer to view the available details and check any requirements shown by the provider.</p>
+<div class="offer-meta"><span>▣ Desktop & mobile</span><span>◷ Provider terms apply</span></div>
+<div class="device-tags"><span>Desktop</span><span>Android</span><span>iPhone</span><span>iOS</span></div>
+<div class="offer-action"><span class="offer-note">Partner link</span><a class="btn btn-small" href="https://www.profitableratecpmnetwork.com/axz3unpc?key=fad35a6714a23d20d806ed1498abaad1" target="_blank" rel="nofollow sponsored noopener">View Offer ↗</a></div>
+</article>
+<article class="offer-card" data-category="cpa" data-devices="desktop android iphone ios" data-search="partner offer 04 CPA smartlink desktop android iphone ios">
+<div class="offer-top"><span class="offer-icon violet">↗</span><span class="pill">CPA OFFER</span></div>
+<h2>Partner Offer 04</h2>
+<p>Open this partner offer to view the available details and check any requirements shown by the provider.</p>
+<div class="offer-meta"><span>▣ Desktop & mobile</span><span>◷ Provider terms apply</span></div>
+<div class="device-tags"><span>Desktop</span><span>Android</span><span>iPhone</span><span>iOS</span></div>
+<div class="offer-action"><span class="offer-note">Partner link</span><a class="btn btn-small" href="https://uplcm.com/4/12092859" target="_blank" rel="nofollow sponsored noopener">View Offer ↗</a></div>
+</article>
+<article class="offer-card" data-category="cpa" data-devices="desktop android iphone ios" data-search="partner offer 05 CPA smartlink desktop android iphone ios">
+<div class="offer-top"><span class="offer-icon violet">↗</span><span class="pill">CPA OFFER</span></div>
+<h2>Partner Offer 05</h2>
+<p>Open this partner offer to view the available details and check any requirements shown by the provider.</p>
+<div class="offer-meta"><span>▣ Desktop & mobile</span><span>◷ Provider terms apply</span></div>
+<div class="device-tags"><span>Desktop</span><span>Android</span><span>iPhone</span><span>iOS</span></div>
+<div class="offer-action"><span class="offer-note">Partner link</span><a class="btn btn-small" href="https://uplcm.com/4/12091625" target="_blank" rel="nofollow sponsored noopener">View Offer ↗</a></div>
+</article>
+<article class="offer-card" data-category="cpa" data-devices="desktop android iphone ios" data-search="partner offer 06 CPA smartlink desktop android iphone ios">
+<div class="offer-top"><span class="offer-icon violet">↗</span><span class="pill">CPA OFFER</span></div>
+<h2>Partner Offer 06</h2>
+<p>Open this partner offer to view the available details and check any requirements shown by the provider.</p>
+<div class="offer-meta"><span>▣ Desktop & mobile</span><span>◷ Provider terms apply</span></div>
+<div class="device-tags"><span>Desktop</span><span>Android</span><span>iPhone</span><span>iOS</span></div>
+<div class="offer-action"><span class="offer-note">Partner link</span><a class="btn btn-small" href="https://uplcm.com/4/12008210" target="_blank" rel="nofollow sponsored noopener">View Offer ↗</a></div>
+</article>
+<article class="offer-card" data-category="cpa" data-devices="desktop android iphone ios" data-search="partner offer 07 CPA smartlink desktop android iphone ios">
+<div class="offer-top"><span class="offer-icon violet">↗</span><span class="pill">CPA OFFER</span></div>
+<h2>Partner Offer 07</h2>
+<p>Open this partner offer to view the available details and check any requirements shown by the provider.</p>
+<div class="offer-meta"><span>▣ Desktop & mobile</span><span>◷ Provider terms apply</span></div>
+<div class="device-tags"><span>Desktop</span><span>Android</span><span>iPhone</span><span>iOS</span></div>
+<div class="offer-action"><span class="offer-note">Partner link</span><a class="btn btn-small" href="https://uplcm.com/4/12092377" target="_blank" rel="nofollow sponsored noopener">View Offer ↗</a></div>
+</article>
+<article class="offer-card" data-category="cpa" data-devices="desktop android iphone ios" data-search="partner offer 08 CPA smartlink desktop android iphone ios">
+<div class="offer-top"><span class="offer-icon violet">↗</span><span class="pill">CPA OFFER</span></div>
+<h2>Partner Offer 08</h2>
+<p>Open this partner offer to view the available details and check any requirements shown by the provider.</p>
+<div class="offer-meta"><span>▣ Desktop & mobile</span><span>◷ Provider terms apply</span></div>
+<div class="device-tags"><span>Desktop</span><span>Android</span><span>iPhone</span><span>iOS</span></div>
+<div class="offer-action"><span class="offer-note">Partner link</span><a class="btn btn-small" href="https://www.profitableratecpmnetwork.com/yhq7n3901?key=f5e5287a69148acb8288241186c6be92" target="_blank" rel="nofollow sponsored noopener">View Offer ↗</a></div>
+</article>
+</div><div class="empty-state" id="empty-state" hidden><b>No matching listings</b><p>Try another device, category or search term.</p></div><div class="disclosure-box"><b>Partner disclosure</b><p>Some links on this site may be affiliate or CPA tracking links. If you continue through a partner link, we may earn a commission or referral fee at no additional cost to you, where applicable. Availability and eligibility are controlled by each provider. Always review their terms and privacy policy.</p></div></section></main>
+<footer class="footer"><div class="wrap footer-main"><a class="brand" href="index.html"><span class="brand-mark">S</span><span>Shemu<span class="brand-light">Hub</span><small>Digital discovery, made simpler</small></span></a><p>A discovery directory for digital tools, selected partner offers and service enquiries.</p><div class="footer-links"><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="disclosure.html">Affiliate disclosure</a><a href="contact.html">Contact</a></div></div><div class="wrap footer-bottom"><span>© <span id="year"></span> Shemu Hub. All rights reserved.</span><span>Independent directory · Partner terms apply</span></div></footer><script src="script.js"></script></body></html>
