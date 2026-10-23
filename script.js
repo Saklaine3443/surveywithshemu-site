@@ -54,6 +54,7 @@
     const message = document.getElementById("message")?.value.trim() || "";
     const subject = encodeURIComponent(`[Shemu Hub] ${topic}`);
     const body = encodeURIComponent(`Name: ${name}\nReply email: ${email}\nTopic: ${topic}\n\nDetails:\n${message}`);
+    // Replace the placeholder with a real, monitored contact email before launch.
     window.location.href = `mailto:REPLACE-WITH-YOUR-REAL-EMAIL@example.com?subject=${subject}&body=${body}`;
   });
 })();
