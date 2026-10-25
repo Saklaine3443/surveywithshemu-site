@@ -52,7 +52,7 @@
     const email = document.getElementById("email")?.value.trim() || "";
     const topic = document.getElementById("topic")?.value || "Enquiry";
     const message = document.getElementById("message")?.value.trim() || "";
-    const subject = encodeURIComponent(`[Shemu Hub] ${topic}`);
+    const subject = encodeURIComponent(`[iERROR] ${topic}`);
     const body = encodeURIComponent(`Name: ${name}\nReply email: ${email}\nTopic: ${topic}\n\nDetails:\n${message}`);
     window.location.href = `mailto:REPLACE-WITH-YOUR-REAL-EMAIL@example.com?subject=${subject}&body=${body}`;
   });
