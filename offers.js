@@ -1,15 +1,15 @@
 /* iERROR — offers list. To add an offer, copy one block, change the id, texts and link. */
 window.OFFERS = [
   {
-    id: "featured-offer",
+    id: "ID-M-01",
     title: "Featured Partner Offer",
     category: "cpa",
     icon: "↗",
     color: "cyan",
-    desc: "A selected partner offer. Review the requirements, eligibility and country availability before you continue.",
+    desc: "Browse on any device of USA, Fill all the requirement site is asking.",
     headline: "Check Out Today’s Featured Offer",
-    sub: "A quick look at what’s on offer, what to expect and how to continue. Takes about a minute.",
-    cta: "Continue to the Offer",
+    sub: "Complete with care - You're not invited to waste times.",
+    cta: "Dive inside it",
     devices: ["desktop", "android", "iphone", "ios"], // which devices it works on
     note: "Check provider terms",                       // short line shown on the card
     link: "https://www.profitableratecpmnetwork.com/yhq7n3901?key=f5e5287a69148acb8288241186c6be92"
