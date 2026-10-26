@@ -181,6 +181,48 @@ window.OFFERS = [
     devices: ["desktop", "android", "iphone", "ios"], // which devices it works on
     note: "Check provider terms",                       // short line shown on the card
     link: "https://www.profitableratecpmnetwork.com/b0umtzbsb?key=5794528d01be1590c9b3584e68ae04b9"
+  },
+  {
+    id: "Featured Partner Offer",
+    title: "ID-M-12",
+    category: "cpa",
+    icon: "↗",
+    color: "cyan",
+    desc: "Browse on any device of USA, Fill all the requirement site is asking.",
+    headline: "Check Out Today’s Featured Offer",
+    sub: "Complete with care - You're not invited to waste times.",
+    cta: "Dive inside it",
+    devices: ["desktop", "android", "iphone", "ios"], // which devices it works on
+    note: "Check provider terms",                       // short line shown on the card
+    link: "https://getafilenow.com/1919686"
+  },
+  {
+    id: "Featured Partner Offer",
+    title: "ID-M-13",
+    category: "cpa",
+    icon: "↗",
+    color: "cyan",
+    desc: "Browse on any device of USA, Fill all the requirement site is asking.",
+    headline: "Check Out Today’s Featured Offer",
+    sub: "Complete with care - You're not invited to waste times.",
+    cta: "Dive inside it",
+    devices: ["android", "iphone", "ios"], // which devices it works on
+    note: "Check provider terms",                       // short line shown on the card
+    link: "https://getafilenow.com/1919690"
+  },
+  {
+    id: "Featured Partner Offer",
+    title: "Everyone",
+    category: "cpa",
+    icon: "↗",
+    color: "cyan",
+    desc: "Browse on any device of USA, Fill all the requirement site is asking.",
+    headline: "Check Out Today’s Featured Offer",
+    sub: "Complete with care - You're not invited to waste times.",
+    cta: "Dive inside it",
+    devices: ["iphone", "ios"], // which devices it works on
+    note: "Check provider terms",                       // short line shown on the card
+    link: "https://getafilenow.com/1919692"
   }
 ];
 (function () {
