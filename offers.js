@@ -223,6 +223,34 @@ window.OFFERS = [
     devices: ["iphone", "ios"], // which devices it works on
     note: "Check provider terms",                       // short line shown on the card
     link: "https://getafilenow.com/1919692"
+  },
+  {
+    id: "Featured Partner Offer",
+    title: "E-004",
+    category: "cpa",
+    icon: "↗",
+    color: "cyan",
+    desc: "Browse on any device of USA, Fill all the requirement site is asking.",
+    headline: "Check Out Today’s Featured Offer",
+    sub: "Complete with care - You're not invited to waste times.",
+    cta: "Dive inside it",
+    devices: ["desktop", "android", "iphone", "ios"], // which devices it works on
+    note: "Check provider terms",                       // short line shown on the card
+    link: "https://uplcm.com/4/12091625"
+  },
+  {
+    id: "Featured Partner Offer",
+    title: "E-005",
+    category: "cpa",
+    icon: "↗",
+    color: "cyan",
+    desc: "Browse on any device of USA, Fill all the requirement site is asking.",
+    headline: "Check Out Today’s Featured Offer",
+    sub: "Complete with care - You're not invited to waste times.",
+    cta: "Dive inside it",
+    devices: ["desktop", "android", "iphone", "ios"], // which devices it works on
+    note: "Check provider terms",                       // short line shown on the card
+    link: "https://uplcm.com/4/12103567"
   }
 ];
 (function () {
