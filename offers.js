@@ -1,8 +1,8 @@
 /* iERROR — offers list. To add an offer, copy one block, change the id, texts and link. */
 window.OFFERS = [
   {
-    id: "ID-M-01",
-    title: "Featured Partner Offer",
+    id: "Featured Partner Offer",
+    title: "ID-M-01",
     category: "cpa",
     icon: "↗",
     color: "cyan",
