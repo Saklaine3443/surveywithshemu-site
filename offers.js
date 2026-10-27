@@ -2,7 +2,7 @@
 window.OFFERS = [
   {
     id: "Featured Partner Offer",
-    title: "Lead",
+    title: "Browse And Get The Offer",
     category: "cpa",
     icon: "↗",
     color: "cyan",
@@ -12,11 +12,11 @@ window.OFFERS = [
     cta: "Dive inside it",
     devices: ["desktop", "android", "iphone", "ios"], // which devices it works on
     note: "Check provider terms",                       // short line shown on the card
-    link: "https://www.directcpi.com/unlock/DkL1Zm"
+    link: "https://www.facebook.com/share/p/1EE4DbmJHx/"
   },
   {
     id: "Featured Partner Offer",
-    title: "Lead Max",
+    title: "Best Offer For You",
     category: "cpa",
     icon: "↗",
     color: "cyan",
@@ -26,7 +26,7 @@ window.OFFERS = [
     cta: "Dive inside it",
     devices: ["desktop", "android", "iphone", "ios"], // which devices it works on
     note: "Check provider terms",                       // short line shown on the card
-    link: "https://www.profitableratecpmnetwork.com/yhq7n3901?key=f5e5287a69148acb8288241186c6be92"
+    link: "https://www.facebook.com/share/p/18JtiNjKWx/"
   },
   {
     id: "Featured Partner Offer",
@@ -40,7 +40,7 @@ window.OFFERS = [
     cta: "Dive inside it",
     devices: ["desktop", "android", "iphone", "ios"], // which devices it works on
     note: "Check provider terms",                       // short line shown on the card
-    link: "https://uplcm.com/4/12103849"
+    link: "https://www.facebook.com/share/p/1J2xAxjeCS/"
   },
   {
     id: "Featured Partner Offer",
@@ -54,7 +54,7 @@ window.OFFERS = [
     cta: "Dive inside it",
     devices: ["desktop", "android", "iphone", "ios"], // which devices it works on
     note: "Check provider terms",                       // short line shown on the card
-    link: "https://www.modcraftforge.com/fortnite/free-unlimited-v-bucks-method-for-fortnite-2026-what-to-know?pub=1399296"
+    link: "https://www.facebook.com/share/p/1Sc4vuVXAN/"
   }
 ];
 (function () {
