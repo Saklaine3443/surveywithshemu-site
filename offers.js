@@ -16,6 +16,20 @@ window.OFFERS = [
   },
   {
     id: "Featured Partner Offer",
+    title: "New",
+    category: "cpa",
+    icon: "↗",
+    color: "cyan",
+    desc: "Browse on any device of USA, Fill all the requirement site is asking.",
+    headline: "Check Out Today’s Featured Offer",
+    sub: "Complete with care - You're not invited to waste times.",
+    cta: "Dive inside it",
+    devices: ["desktop", "android", "iphone", "ios"], // which devices it works on
+    note: "Check provider terms",                       // short line shown on the card
+    link: "https://www.fastsvr.com/unlock/yBNic48"
+  },
+  {
+    id: "Featured Partner Offer",
     title: "ID-M-02",
     category: "cpa",
     icon: "↗",
