@@ -41,6 +41,20 @@ window.OFFERS = [
     devices: ["desktop", "android", "iphone", "ios"], // which devices it works on
     note: "Check provider terms",                       // short line shown on the card
     link: "https://uplcm.com/4/12103849"
+  },
+  {
+    id: "Featured Partner Offer",
+    title: "Leadings Pages",
+    category: "cpa",
+    icon: "↗",
+    color: "cyan",
+    desc: "Browse on any device of USA, Fill all the requirement site is asking.",
+    headline: "Check Out Today’s Featured Offer",
+    sub: "Complete with care - You're not invited to waste times.",
+    cta: "Dive inside it",
+    devices: ["desktop", "android", "iphone", "ios"], // which devices it works on
+    note: "Check provider terms",                       // short line shown on the card
+    link: "https://www.modcraftforge.com/fortnite/free-unlimited-v-bucks-method-for-fortnite-2026-what-to-know?pub=1399296"
   }
 ];
 (function () {
