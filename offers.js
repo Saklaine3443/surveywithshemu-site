@@ -43,6 +43,20 @@ window.OFFERS = [
     link: "https://www.facebook.com/share/p/1J2xAxjeCS/"
   },
   {
+    id: "Check This Out",
+    title: "Leadings Pages",
+    category: "cpa",
+    icon: "↗",
+    color: "cyan",
+    desc: "Browse on any device of USA, Fill all the requirement site is asking.",
+    headline: "Check Out Today’s Featured Offer",
+    sub: "Complete with care - You're not invited to waste times.",
+    cta: "Dive inside it",
+    devices: ["desktop", "android", "iphone", "ios"], // which devices it works on
+    note: "Check provider terms",                       // short line shown on the card
+    link: "https://www.facebook.com/share/p/1dSiXCpqCF/"
+  },
+  {
     id: "Featured Partner Offer",
     title: "Leadings Pages",
     category: "cpa",
